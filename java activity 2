@@ -1,0 +1,20 @@
+/*Sebastian Salazar
+ *Unit 2
+ *In this program I am converting 87.6 F to Celsius */
+
+public class problem2 {
+	
+	public static void main(String[] args) {
+		
+		double fahrenheit = 87.6;  /*initial temperature in Fahrenheit*/
+		double subtraction = fahrenheit - 32; /*In order to convert the temperature from fahrenheit to celsius we must subtact 32 from the initial value*/
+		double celsius = subtraction / (1.8); /*The result of the subtraction must be divided by (9/5) as fraction or 1.8 as decimal. This will give us the result*/
+				
+		System.out.println("Fahrenheit temperature: " + fahrenheit);
+		System.out.println("Celsius Temperature: " + celsius);
+
+		/*I used the variable double due to the fact that I was going to be dealing with decimals and not whole numbers*/
+		
+	}
+
+}
