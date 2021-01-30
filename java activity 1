@@ -1,0 +1,34 @@
+/* Sebastian Salazar
+ * unit 2
+ * in this program I am calculating the total amount of calories that a 150 lb person would burn after doing certain activities in METS. */
+
+public class problem1 {
+	
+	public static void main(String[] args) {
+		
+		// converting weight from pounds to kilograms
+		double poundsToKilograms = 150 / 2.2;
+		double weight = poundsToKilograms;  // weight in kg.
+		
+		//Running
+		int runningMets = 10;
+		double runningPerMinute = 0.0175 * runningMets * weight;
+		double running = runningPerMinute * 30;  // 30 min 
+		
+		//basketball
+		int basketballMets = 8;
+		double basketballPerMinute = 0.0175 * basketballMets * weight;
+		double basketball = basketballPerMinute * 30; // 30 min 
+		
+		//Sleep
+		int sleepMets = 1;
+		double sleepPerMinute = 0.0175 * sleepMets * weight;
+		double sleep = sleepPerMinute * 360;  // there are 360 minutes in 6 hours
+		
+		// Total amount of calories burned
+		double caloriesBurned = running + basketball + sleep;
+		
+		System.out.println(caloriesBurned);
+	}
+
+}
